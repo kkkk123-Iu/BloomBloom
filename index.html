@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf7f0">
+  <meta name="description" content="Bloommark — bookmark resin handmade từ hoa khô, thiết kế riêng theo phong cách của bạn.">
+  <title>Bloommark | Bookmark resin handmade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">HANDMADE WITH LOVE · MỖI TRANG SÁCH, MỘT DẤU ẤN</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Bloommark trang chủ">
+      <span class="brand-name">Bloommark</span>
+      <span class="brand-tagline">DẤU TRANG RESIN · LƯU GIỮ CẢM HỨNG</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Trang chủ</a><a href="#products">Sản phẩm</a><a href="#custom">Thiết kế riêng</a><a href="#contact">Liên hệ</a>
+    </nav>
+    <a class="cart-link" href="#order">Đơn hàng <span id="cartCount">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">LƯU GIỮ NHỮNG ĐIỀU NHỎ BÉ</p>
+        <h1>Một chiếc bookmark,<br><em>một câu chuyện</em><br>của riêng bạn.</h1>
+        <p class="hero-text">Bloommark tạo nên những chiếc dấu trang resin thủ công từ hoa khô và sắc màu bạn yêu thích. Một món quà nhỏ xinh dành cho người thương — hoặc chính bạn.</p>
+        <div class="hero-actions"><a class="button" href="#products">Khám phá sản phẩm</a><a class="button button-outline" href="#custom">Tự thiết kế bookmark</a></div>
+        <div class="hero-notes"><span>✿ Hoa khô ép</span><span>♡ Làm thủ công</span><span>✧ Cá nhân hóa</span></div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1495446221361-8d8d8b1b1b0f?auto=format&fit=crop&w=1200&q=85" alt="Sách và góc đọc sách ấm áp" onerror="this.style.display='none'">
+        <div class="image-label"><span>Bloommark Studio</span><strong>Made with love, for your story.</strong></div>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <p class="eyebrow">LỜI CHÀO TỪ BLOOMMARK</p>
+      <h2>Những cánh hoa nhỏ,<br><em>được lưu giữ thật lâu.</em></h2>
+      <p class="section-lead">Mỗi chiếc bookmark là một món đồ thủ công mang nét riêng: trong trẻo, nhẹ nhàng và đủ đặc biệt để khiến những trang sách thân quen trở nên đáng nhớ hơn.</p>
+      <div class="features">
+        <article><span class="feature-icon">✿</span><h3>Handmade tỉ mỉ</h3><p>Từng chi tiết được chăm chút trong quá trình hoàn thiện.</p></article>
+        <article><span class="feature-icon">❧</span><h3>Cảm hứng thiên nhiên</h3><p>Hoa khô, lá ép và những bảng màu dịu dàng.</p></article>
+        <article><span class="feature-icon">♡</span><h3>Món quà có ý nghĩa</h3><p>Thêm tên, thông điệp và gói quà theo yêu cầu.</p></article>
+      </div>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="section-heading"><div><p class="eyebrow">BỘ SƯU TẬP BLOOMMARK</p><h2>Góc nhỏ của những cánh hoa</h2></div><p>Chọn một mẫu bạn yêu thích.</p></div>
+      <div class="filter-row" id="filters">
+        <button class="filter active" data-filter="Tất cả">Tất cả</button>
+        <button class="filter" data-filter="Hồng">Hồng</button>
+        <button class="filter" data-filter="Vàng">Vàng</button>
+        <button class="filter" data-filter="Tím">Tím</button>
+        <button class="filter" data-filter="Xanh">Xanh</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="small-note">Hình ảnh minh họa phong cách sản phẩm; hoa và màu sắc thực tế có thể khác nhau vì đặc tính handmade. Giá là giá tham khảo, bạn có thể điều chỉnh trước khi kinh doanh.</p>
+    </section>
+
+    <section class="custom-section section" id="custom">
+      <div class="custom-intro">
+        <p class="eyebrow">MADE JUST FOR YOU</p>
+        <h2>Tạo dấu trang<br><em>theo cách của bạn.</em></h2>
+        <p>Chọn màu sắc, phong cách và cách đóng gói. Bloommark sẽ dựa vào ý tưởng của bạn để xác nhận mẫu và báo giá cuối cùng.</p>
+        <div class="custom-decor">✿ <span>✧</span> ♡</div>
+      </div>
+      <form id="customForm" class="custom-form">
+        <label>Mẫu sản phẩm
+          <select id="customProduct"><option>Bloom hồng</option><option>Sunny Daisy</option><option>Lavender Dream</option><option>Forest Whisper</option><option>Blue Sky</option><option>Golden Muse</option><option>Thiết kế hoàn toàn mới</option></select>
+        </label>
+        <fieldset><legend>Màu sắc yêu thích</legend><div class="choice-grid">
+          <label><input type="radio" name="color" value="Hồng pastel" checked><span class="swatch pink"></span>Hồng pastel</label>
+          <label><input type="radio" name="color" value="Tím lavender"><span class="swatch purple"></span>Tím lavender</label>
+          <label><input type="radio" name="color" value="Xanh sage"><span class="swatch sage"></span>Xanh sage</label>
+          <label><input type="radio" name="color" value="Xanh dương"><span class="swatch blue"></span>Xanh dương</label>
+          <label><input type="radio" name="color" value="Vàng kem"><span class="swatch yellow"></span>Vàng kem</label>
+          <label><input type="radio" name="color" value="Trắng trong"><span class="swatch cream"></span>Trắng trong</label>
+        </div></fieldset>
+        <label>Phong cách
+          <select id="customStyle"><option>Hoa khô tự nhiên</option><option>Vintage cổ điển</option><option>Minimalist tối giản</option><option>Cute pastel</option><option>Galaxy lấp lánh</option></select>
+        </label>
+        <fieldset><legend>Sản phẩm dành cho</legend><div class="radio-row">
+          <label><input type="radio" name="gender" value="Nữ" checked> Nữ</label>
+          <label><input type="radio" name="gender" value="Nam"> Nam</label>
+          <label><input type="radio" name="gender" value="Unisex"> Unisex</label>
+        </div></fieldset>
+        <label>Tên hoặc thông điệp muốn thêm<input id="customName" placeholder="Ví dụ: Minh Tuyên, Be happy..."></label>
+        <label>Ý tưởng / yêu cầu riêng<textarea id="customNote" rows="3" placeholder="Ví dụ: hoa cúc nhỏ, dây tua rua màu kem..."></textarea></label>
+        <fieldset><legend>Đóng gói quà tặng?</legend><label class="check-line"><input type="checkbox" id="giftCheck" checked> Có, mình muốn trang trí làm quà tặng</label>
+          <label id="giftWrapLabel">Kiểu đóng gói
+            <select id="giftWrap"><option value="Hộp kraft vintage (+15.000đ)">Hộp kraft vintage, ruy băng (+15.000đ)</option><option value="Túi quà pastel (+10.000đ)">Túi quà pastel, thiệp nhỏ (+10.000đ)</option><option value="Hộp quà cao cấp (+25.000đ)">Hộp quà cao cấp, thiệp viết tay (+25.000đ)</option></select>
+          </label>
+        </fieldset>
+        <div class="form-two"><label>Số lượng<input id="customQty" type="number" min="1" max="50" value="1" required></label><label>Thông tin liên hệ<input id="customContact" placeholder="Facebook / Instagram / SĐT" required></label></div>
+        <button class="button full" type="submit">Tạo yêu cầu đặt hàng ↗</button>
+        <p class="small-note">Nút này tạo nội dung đơn hàng để bạn gửi cho shop; website demo chưa tự nhận thanh toán hoặc lưu đơn lên máy chủ.</p>
+      </form>
+    </section>
+
+    <section class="order-section section" id="order">
+      <div class="section-heading"><div><p class="eyebrow">GIỎ HÀNG</p><h2>Những món bạn đã chọn</h2></div><button id="clearCart" class="text-button">Xóa giỏ hàng</button></div>
+      <div id="cartItems" class="cart-items"><p class="empty-cart">Giỏ hàng của bạn đang trống. Ghé bộ sưu tập để chọn một chiếc bookmark nhé ♡</p></div>
+      <div class="cart-total"><span>Tạm tính</span><strong id="cartTotal">0đ</strong></div>
+      <button class="button" id="checkoutBtn">Tạo tin nhắn đặt hàng</button>
+      <div id="orderOutput" class="order-output" hidden><label>Nội dung đơn hàng<textarea id="orderMessage" rows="8" readonly></textarea></label><button class="button button-outline" id="copyOrder" type="button">Sao chép nội dung</button><p id="copyStatus" class="small-note"></p></div>
+    </section>
+
+    <section class="contact section" id="contact"><p class="eyebrow">STAY IN TOUCH</p><h2>Một món quà nhỏ,<br><em>một niềm vui thật lâu.</em></h2><p>Bloommark cảm ơn bạn đã ủng hộ những sản phẩm thủ công.</p><div class="contact-links"><a href="#products">Xem sản phẩm</a><a href="#custom">Đặt thiết kế riêng</a></div><p class="small-note">Facebook · Instagram · TikTok Shop — cập nhật đường dẫn thật của shop tại đây trước khi công khai.</p></section>
+  </main>
+  <footer><a class="brand-name" href="#home">Bloommark</a><span>Lưu giữ từng trang, ghi dấu cảm hứng. ♡</span><span>© <span id="year"></span> Bloommark</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
